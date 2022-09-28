@@ -1,3 +1,8 @@
+# Prueba el proyecto
+
+https://kant003.github.io/piano/
+
+
 # Empaquetado web
 
 - Tengo ofoscación
@@ -34,6 +39,7 @@ npm init --yes
 npm install tone
 
 ## Añadir el empaquetador parcel (dependecia de desarrollo)
+
 npm install --save-dev parcel
 
 
@@ -44,3 +50,11 @@ npx parcel build src/index.html
 
 ## Añadimos el librería react
 npm install react react-dom
+
+
+# Comitear a github
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/kant003/piano.git
+git push origin master
