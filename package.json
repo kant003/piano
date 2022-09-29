@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx parcel src/index.html",
     "prod": "npx parcel build src/index.html",
-    "prod-github": "rd /S docs && npx parcel build src/index.html --public-url ./ --dist-dir docs"
+    "prod-github": "rd /S docs && npx parcel build src/index.html --public-url ./ --dist-dir docs",
+    "deploy": "git add . && git commit -m 'change' && git push origin master"
   },
   "author": "Angel Gonzalez",
   "license": "ISC",

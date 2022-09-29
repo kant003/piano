@@ -9,9 +9,15 @@ let notesKeys = {'a': 'c4' , 's':'d4', 'd':'e4', 'f':'f4',
                      'g':'g4', 'h':'a4', 'j':'b4', 'k':'c5'}
 function noteSound(event){
     synth.triggerAttackRelease(notesKeys[event.key.toLowerCase()], "8n")
+    document.getElementById(notesKeys[event.key.toLowerCase()]).classList.add('active') 
+}
+
+function noteOf(event){
+    document.getElementById(notesKeys[event.key.toLowerCase()]).classList.remove('active') 
 }
 
 document.getElementById('body').addEventListener('keydown', noteSound)
+document.getElementById('body').addEventListener('keyup', noteOf)
 
 function PianoKey(props){
     return <button 
